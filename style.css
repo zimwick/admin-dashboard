@@ -6,6 +6,7 @@
 
 html {
   font-family: "Roboto", sans-serif;
+  background-color: #333;
 }
 
 .dash-icon {
@@ -16,7 +17,7 @@ html {
 
 header {
   background-color: #ffffff;
-  padding: 10px 28px;
+  padding: 10px 40px;
   grid-column: 2 /-1;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -120,12 +121,43 @@ svg {
   align-items: center;
   justify-content: right;
   gap: 20px;
+  padding-right: 15px;
+}
+
+.login-info-container span {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .display-name-container {
   display: flex;
+  gap: 16px;
+  align-items: center;
 }
 
 .button-container {
   display: flex;
+}
+
+.login-photo {
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 50%;
+}
+
+.main-photo {
+  max-width: 58px;
+  max-height: 58px;
+  border-radius: 50%;
+}
+
+.person-container p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.person-container h3 {
+  font-size: 24px;
+  font-weight: 650;
 }
