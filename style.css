@@ -17,12 +17,14 @@ html {
 
 header {
   background-color: #ffffff;
-  padding: 10px 40px;
+  padding: 0px 40px;
   grid-column: 2 /-1;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
-  column-gap: 10px;
+  column-gap: 20px;
+  box-shadow: 0px 3px 5px #ccc;
+  z-index: 1;
 }
 
 .header-menu,
@@ -120,8 +122,8 @@ svg {
   display: flex;
   align-items: center;
   justify-content: right;
-  gap: 20px;
-  padding-right: 15px;
+  gap: 22px;
+  padding-right: 22px;
 }
 
 .login-info-container span {
@@ -137,6 +139,30 @@ svg {
 
 .button-container {
   display: flex;
+  align-items: center;
+  gap: 25px;
+  justify-content: right;
+}
+
+.button-container button {
+  height: 38px;
+  width: 98px;
+  border-radius: 100px;
+  border: none;
+  background-color: #0095d1;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 580;
+  transition: all 0.3s;
+}
+
+.button-container button:hover,
+.button-container button:active {
+  background-color: #0087bc;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .login-photo {
@@ -146,8 +172,8 @@ svg {
 }
 
 .main-photo {
-  max-width: 58px;
-  max-height: 58px;
+  max-width: 59px;
+  max-height: 59px;
   border-radius: 50%;
 }
 
