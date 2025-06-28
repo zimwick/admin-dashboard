@@ -38,8 +38,12 @@ nav {
   grid-row: 1/-1;
   padding: 14px;
 }
+
 main {
   background-color: #e1e8f0;
+}
+
+.main-inner-container {
   display: flex;
   padding: 30px 18px;
   gap: 16px;
@@ -194,12 +198,15 @@ button:hover {
 .cards-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 22px;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 25px;
 }
 
 .card-container {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
-  padding: 32px;
+  padding: 28px;
   border-radius: 12px;
   position: relative;
   z-index: 0;
@@ -228,12 +235,13 @@ button:hover {
 .card-text {
   font-size: 15px;
   color: #777;
-  margin-bottom: 46px;
+  margin-bottom: 22px;
 }
 
 .card-icons-container {
+  margin-top: auto;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   gap: 22px;
 }
 
@@ -245,4 +253,42 @@ button:hover {
   font-weight: 450;
   font-size: 20px;
   margin-bottom: 12px;
+}
+
+.side-container {
+  flex: 28%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.announcement-post h4 {
+  font-size: 13px;
+}
+
+.announcement-post:not(:last-child) {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+.announcement-post:not(:first-child) {
+  padding-top: 16px;
+}
+
+.announcement-post p {
+  color: #777;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 11px;
+}
+
+.announcements-posts-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 2px 3px 5px #ccc;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
 }
