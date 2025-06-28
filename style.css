@@ -288,7 +288,40 @@ button:hover {
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 2px 3px 5px #ccc;
-  padding: 30px;
+  padding: 28px;
   display: flex;
   flex-direction: column;
+}
+
+.trending-posts-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 2px 3px 5px #ccc;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.trending-display-name-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.trending-display-name-container p {
+  font-weight: 350;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.trending-display-name-container h5 {
+  font-weight: 400;
+  font-size: 13px;
+  color: #777;
+}
+
+.trending-person-photo {
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 50%;
 }
