@@ -264,6 +264,7 @@ button:hover {
 
 .announcement-post h4 {
   font-size: 13px;
+  margin-bottom: 2px;
 }
 
 .announcement-post:not(:last-child) {
